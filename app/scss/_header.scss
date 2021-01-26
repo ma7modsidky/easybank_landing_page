@@ -4,7 +4,9 @@
     background-color: $white;
 
     nav {
-        padding: 1.0625rem 1.5rem;
+        position: relative;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
     }
 
     //header open styles
@@ -105,4 +107,22 @@
         }
     }
 
+    &__menu {
+        position: absolute;
+        width: calc(100% - 3rem);
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 1.5rem;
+        padding: 1.625rem;
+        background: $white;
+        border-radius: 5px;
+        background-color: $white;
+
+        a {
+            display: block;
+            color : $darkblue;
+            padding : 0.625rem;
+            text-align: center;
+        }
+    }
 }
