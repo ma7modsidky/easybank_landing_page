@@ -1,0 +1,75 @@
+.hero {
+    background-color: $verylightgray;
+    @include breakpoint-up(large){
+        display: flex;
+        align-items: center;
+        height: 27rem;
+    }
+    
+    &__image{
+        @include breakpoint-up(large){
+            flex: 3;
+            order: 2;
+            height: 41rem;
+            background-image: url('/images/bg-intro-desktop.svg');
+            background-position: left center;
+        }
+
+        position: relative;
+        background-image: url('/images/bg-intro-mobile.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 17.625rem;
+
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('/images/image-mockups.png');
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            height: 100%;
+            width: 95%;
+            // top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            @include breakpoint-up(medium){
+                width: 52%;
+            }
+            @include breakpoint-up(large){
+                width: 95%;
+            }
+        }
+    }
+
+    &__text {
+
+        @include breakpoint-up(large){
+            flex: 2;
+            order : 1;
+            text-align: left;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+
+        text-align: center;
+        
+        h1{
+            font-weight: 300;
+            font-size: 2.31rem;
+            line-height: 1.15;
+            color: $darkblue;
+
+            @include breakpoint-up(large){
+                font-size: $font-xlg;
+            }
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 2.25rem;
+        }
+    }
+
+}
