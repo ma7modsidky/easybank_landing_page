@@ -15,38 +15,67 @@ body {
     font-size: $font-med;
     font-weight: 300;
     color : $grayishblue;
+    min-height: 200vh;
 }
 
 a, a:visited a:hover {
     text-decoration: none;
 }
 
-h1,h2,h3 {
-    margin-top: 0;
+//headings
+h1 {
+    font-weight: 300;
+    font-size: 2.31rem;
+    line-height: 1.15;
+    color: $darkblue;
+
+    @include breakpoint-up(large){
+        font-size: $font-xlg;
+    }
 }
+
+
+h2,h3 {
+    margin-top: 0;
+    font-weight: 300;
+    line-height: 1.15;
+    color: $darkblue;
+    @include breakpoint-up(large){
+        font-size: 2.5rem;
+    }
+
+}
+
 //spacing
 .container {
-    max-width: auto;
-    margin: auto;
+    max-width: 77.5rem;
+    margin: 0 auto;
 
     //helper classes
-    &--t {
-        padding-top: 1.5rem;
+    &--pt {
+        padding-top: 4.375rem;
     }
-    &--r {
+    &--pr {
         padding-right: 1.5rem;
     }
-    &--b {
-        padding-bottom: 1.5rem;
+    &--pb {
+        padding-bottom: 4.375rem;
     }
-    &--l {
+    &--pl {
         padding-left: 1.5rem;
     }
-    &--y {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+    &--py {
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
     }
-    &--x {
+    &--px {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    &--pall {
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
         padding-right: 1.5rem;
         padding-left: 1.5rem;
     }
