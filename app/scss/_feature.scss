@@ -1,5 +1,8 @@
 .feature {
     background-color: $lightgrayishblue;
+    &-content {
+        background-color: $lightgrayishblue;
+    }
     &__text {
         margin-bottom: 2.25rem;
         @include breakpoint-up(large){

@@ -380,6 +380,7 @@ button:hover, .button:hover {
     height: 41rem;
     background-image: url("/images/bg-intro-desktop.svg");
     background-position: left center;
+    right: -6.875rem;
   }
 }
 
@@ -433,6 +434,10 @@ button:hover, .button:hover {
 }
 
 .feature {
+  background-color: #f3f4f6;
+}
+
+.feature-content {
   background-color: #f3f4f6;
 }
 
