@@ -19,12 +19,13 @@ body {
     overflow-x: hidden;
 }
 
-a, a:visited a:hover {
+a, a:visited a:hover a:any-link{
     text-decoration: none;
 }
 
 //headings
 h1 {
+    
     font-weight: 300;
     font-size: 2.31rem;
     line-height: 1.15;
